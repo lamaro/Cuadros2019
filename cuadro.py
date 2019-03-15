@@ -61,5 +61,6 @@ try:
 
 except KeyboardInterrupt:
     player.quit()
+    GPIO.cleanup()
     time.sleep(3)
     sys.exit()
